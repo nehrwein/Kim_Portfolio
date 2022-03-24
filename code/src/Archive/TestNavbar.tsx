@@ -1,7 +1,7 @@
 import MuiDrawer from './MuiDrawer';
 import styled from 'styled-components';
 
-const Navbar = () => {
+const TestNavbar = () => {
 
   return (
     <NavBar>
@@ -15,7 +15,7 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default TestNavbar
 
 const NavBar = styled.nav`
   width: 100vw;
