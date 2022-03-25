@@ -3,13 +3,15 @@ import { Link } from 'react-scroll'
 
 export const Nav = styled.nav`
   height: 80px;
+  width: 100vw;
   /* margin-top: -80px; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
+  position: fixed;
   top: 0;
+
   z-index: 10;
 
   @media (max-width: 960px) {
