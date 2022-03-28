@@ -42,7 +42,7 @@ export const HeroHeadline = styled.h1`
 
 export const HeroTextContainer = styled.div`
   margin-top: 40px;
-  height: 180px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,8 +50,8 @@ export const HeroTextContainer = styled.div`
 
 export const HeroText = styled.h2`
   font-weight: 400;
-  font-size: 21px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 21px;
 `
 
 export const HeroImage = styled.img.attrs({
