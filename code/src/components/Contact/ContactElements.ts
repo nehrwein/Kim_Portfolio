@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ContactContainer = styled.div`
+export const ContactContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;

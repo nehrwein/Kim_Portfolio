@@ -3,38 +3,25 @@ import { AboutSection, AboutArticle, AboutHeadline, AboutList, AboutListItem } f
 import data from '../../data/data.json'
 
 const About = () => {
+  console.log(data.About)
   return (
     <AboutSection>
-      <AboutArticle>
-        <AboutHeadline>
-          Kompetens
-        </AboutHeadline>
-        <AboutList>
-          {data.Kompetens?.map((item) => (
-            <AboutListItem key={item}>{item}</AboutListItem>
-          ))}
-        </AboutList>
-      </AboutArticle>
-      <AboutArticle>
-        <AboutHeadline>
-          Arbetslivserfarenhet
-        </AboutHeadline>
-        <AboutList>
-          {data.Arbetslivserfarenhet?.map((item) => (
-            <AboutListItem key={item}>{item}</AboutListItem>
-          ))}
-        </AboutList>
-      </AboutArticle>
-      <AboutArticle>
-        <AboutHeadline>
-          Utbildning i urval
-        </AboutHeadline>
-        <AboutList>
-          {data.UtbildningShort?.map((item) => (
-            <AboutListItem key={item}>{item}</AboutListItem>
-          ))}
-        </AboutList>
-      </AboutArticle>
+      {data.About?.map((item) => (
+        <AboutArticle key={item.id}>
+          <AboutHeadline>
+            {item.headline}
+          </AboutHeadline>
+          <AboutList>
+            {item.content?.map((element) => (
+              <AboutListItem
+                highlight={data.A_Highlight.indexOf(element)}
+                key={element}
+              >{element}
+              </AboutListItem>
+            ))}
+          </AboutList>
+        </AboutArticle>
+      ))}
     </AboutSection>
   )
 }

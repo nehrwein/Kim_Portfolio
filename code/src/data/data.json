@@ -1,34 +1,52 @@
 {
-  "Kompetens": [
-    "Reportage",
-    "Nyheter", 
-    "Debattartiklar", 
-    "Populärvetenskapliga artiklar", 
-    "Personporträtt", 
-    "Pressmeddelanden", 
-    "Översättning engelska/svenska (idiomatiskt korrekt)", 
-    "Ordvitsar"
-  ],
-  "Arbetslivserfarenhet": [ 
+  "About": [
+    {
+      "id": 1,
+      "headline": "Kompetens",
+      "content": [
+        "Reportage",
+        "Nyheter", 
+        "Debattartiklar", 
+        "Populärvetenskapliga artiklar", 
+        "Personporträtt", 
+        "Pressmeddelanden", 
+        "Översättning engelska/svenska (idiomatiskt korrekt)", 
+        "Ordvitsar"
+      ]
+    },
+    {
+      "id": 2,
+      "headline": "Arbetslivserfarenhet",
+      "content": [ 
+        "PR-konsult/kommunikatör/skribent",
+        "Progress PR", 
+        "Journalist", 
+        "Sydsvenska Dagbladet",
+        "LRF Media",
+        "Mitt i Stockholm",
+        "Tidningarnas Telegrambyrå",
+        "Dagens Nyheter",
+        "Lokaltidningen Malmö",
+        "Expressen (Kvällsposten)",
+        "Ystads Allehanda",
+        "Barometern"
+      ]
+    },
+    {
+      "id": 3,
+      "headline": "Utbildning i urval",
+      "content": [
+        "Digital Copywriting – Berghs School of Communication",
+        "Magisterexamen",
+        "Internationella relationer",
+        "Kandidatexamen",
+        "Freds- och konfliktvetenskap",
+        "Journalistutbildning"
+      ]
+    }
+  ], 
+  "A_Highlight": [
     "PR-konsult/kommunikatör/skribent",
-    "Progress PR", 
-    "Journalist", 
-    "Sydsvenska Dagbladet",
-    "LRF Media",
-    "Mitt i Stockholm",
-    "Tidningarnas Telegrambyrå",
-    "Dagens Nyheter",
-    "Lokaltidningen Malmö",
-    "Expressen (Kvällsposten)",
-    "Ystads Allehanda",
-    "Barometern"
-    ],
-    "UtbildningShort": [
-      "Digital Copywriting – Berghs School of Communication",
-      "Magisterexamen",
-      "Internationella relationer",
-      "Kandidatexamen",
-      "Freds- och konfliktvetenskap",
-      "Journalistutbildning"
-    ]
+    "Journalist"
+  ]
 }

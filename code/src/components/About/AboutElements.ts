@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const AboutSection = styled.section`
-
 `
 
 export const AboutArticle = styled.article`
@@ -23,10 +22,15 @@ export const AboutList = styled.ul`
   margin-top: 20px;
 `
 
-export const AboutListItem = styled.li`
+interface AlivsProps {
+  highlight: number;
+}
+
+export const AboutListItem = styled.li<AlivsProps>`
   font-family: 'Domine';
   font-style: normal;
-  font-weight: 400;
+  font-weight: ${({ highlight }) => highlight > -1 ? 700 : 400};
+  color: ${({ highlight }) => highlight > -1 ? 'white' : 'whitesmoke'};
   font-size: 18px;
   line-height: 21px;
 `
