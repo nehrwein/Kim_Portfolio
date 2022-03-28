@@ -1,12 +1,14 @@
 import React from 'react';
+import GlobalStyle from './styles/global';
 import Home from './pages';
 import './App.css';
 
 const App = () => {
   return (
-    <div>
+    <>
+      <GlobalStyle />
       <Home />
-    </div>
+    </>
   );
 }
 

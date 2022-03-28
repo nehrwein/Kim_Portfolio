@@ -56,6 +56,8 @@ export const HeroImage = styled.img.attrs({
 })`
   grid-area: 1 / 1 / 5 / 2;
   height: 100vh;
+  width: 100vw;
+  object-fit: cover;
 
   @media (min-width: 1024px) {
     grid-area: 1 / 8 / 7 / 13;
