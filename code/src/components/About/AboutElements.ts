@@ -34,3 +34,19 @@ export const AboutListItem = styled.li<AlivsProps>`
   font-size: 18px;
   line-height: 21px;
 `
+
+export const PdfDownload = styled.a`
+  display: block;
+  color: white;
+  margin-top: 20px;
+  font-family: 'Domine';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+
+  :hover {
+    color: var(--secondary);
+    transition: 0.2s ease-in-out;
+  }
+`

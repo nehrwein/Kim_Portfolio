@@ -7,11 +7,11 @@ interface SidebarProps {
 }
 
 export const SidebarContainer = styled.nav<SidebarProps>`
-  position: absolute;
+  position: fixed;
   z-index: 999;
   width: 60%;
-  height: 100%;
-  background: linear-gradient(180deg, #182A48 0%, rgba(24, 42, 72, 0.77) 100%);
+  height: 100vh;
+  background: var(--blue);
   display: grid;
   align-items: center;
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
@@ -59,7 +59,7 @@ export const SidebarLink = styled(Link)`
   cursor: pointer;
 
   &:hover {
-    color: blue;
+    color: var(--secondary);
     transition: 0.2s ease-in-out;
   }
 `

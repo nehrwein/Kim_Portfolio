@@ -9,7 +9,7 @@ const Contact = () => {
         <p>550 West 45th Street</p>
         <p>New York, NY, 10036</p>
       </AddressContainer>
-      <p>kim-lind@outlook.com</p>
+      <a href='mailto:kim-lind@outlook.com'>kim-lind@outlook.com</a>
     </ContactContainer>
   )
 }

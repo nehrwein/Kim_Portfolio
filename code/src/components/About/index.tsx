@@ -1,9 +1,8 @@
 import React from 'react'
-import { AboutSection, AboutArticle, AboutHeadline, AboutList, AboutListItem } from './AboutElements'
+import { AboutSection, AboutArticle, AboutHeadline, AboutList, AboutListItem, PdfDownload } from './AboutElements'
 import data from '../../data/data.json'
 
 const About = () => {
-  console.log(data.About)
   return (
     <AboutSection>
       {data.About?.map((item) => (
@@ -20,6 +19,10 @@ const About = () => {
               </AboutListItem>
             ))}
           </AboutList>
+          <PdfDownload 
+            href="/assets/CV_KL.pdf"
+            target="_blank">{item.CV}
+          </PdfDownload>
         </AboutArticle>
       ))}
     </AboutSection>

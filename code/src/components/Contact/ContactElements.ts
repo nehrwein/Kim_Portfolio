@@ -15,6 +15,15 @@ export const ContactContainer = styled.section`
   font-size: 18px;
   line-height: 25px;
   text-align: center;
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: var(--secondary);
+    transition: 0.2s ease-in-out;
+  }
 `
 
 export const AddressContainer = styled.div`
