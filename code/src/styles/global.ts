@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin:0 auto;
+    padding: 0 10px;
     min-height: 100vh;
     height: 100%;
     color: whitesmoke;

@@ -6,14 +6,10 @@ export const HeroContainer = styled.div`
   height: 100vh;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-grid-row-gap: 0px; 
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; 
     width: 90%
   }
 `
@@ -42,7 +38,14 @@ export const HeroHeadline = styled.h1`
   font-weight: 400;
   font-size: 26px;
   line-height: 30px;
-  margin: 0 10px;
+`
+
+export const HeroTextContainer = styled.div`
+  margin-top: 40px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 export const HeroText = styled.h2`
@@ -57,6 +60,7 @@ export const HeroImage = styled.img.attrs({
   grid-area: 1 / 1 / 5 / 2;
   height: 100vh;
   width: 100vw;
+  margin: 0 -10px;
   object-fit: cover;
 
   @media (min-width: 1024px) {
