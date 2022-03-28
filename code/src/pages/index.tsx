@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import About from '../components/About'
+import Contact from '../components/Contact'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
@@ -17,6 +18,7 @@ const Home = () => {
       <Navbar toggle={toggle}/>
       <Hero />
       <About />
+      <Contact />
     </>
   )
 }

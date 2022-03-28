@@ -3,10 +3,6 @@ import { AboutSection, AboutArticle, AboutHeadline, AboutList, AboutListItem } f
 import data from '../../data/data.json'
 
 const About = () => {
-  //AboutContainer
-  //h3 -> bottemline visible
-  //strich
-  //ul
   return (
     <AboutSection>
       <AboutArticle>
