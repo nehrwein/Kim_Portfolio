@@ -17,7 +17,7 @@ const Hero = () => {
         </HeroHeadline>
       </HeroHeadlineContainer> 
       <HeroImage />
-    </HeroContainer>
+   
     <HeroTextContainer>
       <HeroText>
         Finnes: Frilansskribent med bred erfarenhet av olika ämnesområden, bland annat byggindustri, life science, privatekonomi och sport.
@@ -26,6 +26,7 @@ const Hero = () => {
         Sökes: Uppdragsgivare på distans. 
       </HeroText>
     </HeroTextContainer>
+    </HeroContainer>
     </>
   )
 }

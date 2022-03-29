@@ -16,13 +16,37 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to='home'>Home</NavLinks>
+              <NavLinks 
+                to='home'
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={0}
+              >
+                Home
+            </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='about'>About</NavLinks>
+              <NavLinks 
+                to='about' 
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-40}
+              >
+                About
+            </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='contact'>Contact</NavLinks>
+              <NavLinks 
+                to='contact'
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={0}
+              >
+                Contact
+              </NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

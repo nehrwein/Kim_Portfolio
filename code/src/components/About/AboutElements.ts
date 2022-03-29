@@ -15,6 +15,11 @@ export const AboutHeadline = styled.h3`
   line-height: 34px;
   border-bottom: 1px solid;
   padding-bottom: 10px;
+
+  @media (min-width: 668px) {
+    font-size: 45px;
+    line-height: 61px;
+  }
 `
 
 export const AboutList = styled.ul`
@@ -33,6 +38,11 @@ export const AboutListItem = styled.li<AlivsProps>`
   color: ${({ highlight }) => highlight > -1 ? 'white' : 'whitesmoke'};
   font-size: 18px;
   line-height: 21px;
+
+  @media (min-width: 668px) {
+    font-size: 21px;
+    line-height: 24px;
+  }
 `
 
 export const PdfDownload = styled.a`
@@ -48,5 +58,10 @@ export const PdfDownload = styled.a`
   :hover {
     color: var(--secondary);
     transition: 0.2s ease-in-out;
+  }
+
+  @media (min-width: 668px) {
+    font-size: 21px;
+    line-height: 24px;
   }
 `

@@ -14,7 +14,7 @@ export const Nav = styled.nav`
 
   z-index: 10;
 
-  @media (max-width: 960px) {
+  @media (max-width: 668px) {
     transition: 0.8s all ease;
   }
 `
@@ -50,7 +50,7 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   /* might not be needed in my design */
-  /* margin-right: -22px; */
+  margin-right: 50px;
 
   @media (max-width: 768px) {
     display: none;

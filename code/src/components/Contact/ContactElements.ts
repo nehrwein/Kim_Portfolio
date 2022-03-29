@@ -24,6 +24,11 @@ export const ContactContainer = styled.section`
     color: var(--secondary);
     transition: 0.2s ease-in-out;
   }
+
+  @media (min-width: 668px) {
+    font-size: 21px;
+    line-height: 29px;
+  }
 `
 
 export const AddressContainer = styled.div`
