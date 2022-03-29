@@ -13,13 +13,34 @@ const Sidebar: React.FC<Props> = ({ isOpen, toggle }) => {
         <CloseIcon />
       </Icon>
         <SidebarMenu>
-          <SidebarLink to='home' onClick={toggle}>
+          <SidebarLink 
+            to='home'
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={0}
+          >
             Home
           </SidebarLink>
-          <SidebarLink to='about'  onClick={toggle}>
+          <SidebarLink 
+            to='about' 
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-40}
+          >
             About
           </SidebarLink>
-          <SidebarLink to='contact' onClick={toggle}>
+          <SidebarLink 
+            to='contact'
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={0}
+          >
             Contact
           </SidebarLink>
         </SidebarMenu>

@@ -4,7 +4,7 @@ import data from '../../data/data.json'
 
 const About = () => {
   return (
-    <AboutSection>
+    <AboutSection id='about'>
       {data.About?.map((item) => (
         <AboutArticle key={item.id}>
           <AboutHeadline>

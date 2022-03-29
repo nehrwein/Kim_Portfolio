@@ -6,7 +6,7 @@ export const ContactContainer = styled.section`
   justify-content: space-between;
   height: 160px;
   margin-top: 90px;
-  margin-bottom: 50px;
+  margin-bottom: 250px;
   padding: 20px 0;
   border-top: 1px solid;
   font-family: 'Open Sans';

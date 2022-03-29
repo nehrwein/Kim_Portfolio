@@ -3,7 +3,7 @@ import { ContactContainer, AddressContainer } from './ContactElements'
 
 const Contact = () => {
   return (
-    <ContactContainer>
+    <ContactContainer id='contact'>
       <AddressContainer>
         <p>Kim Lind</p>
         <p>550 West 45th Street</p>

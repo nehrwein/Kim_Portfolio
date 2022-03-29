@@ -4,7 +4,7 @@ import { HeroContainer, HeroImage, HeroHeadlineContainer, HeroHeadline, HeroText
 const Hero = () => {
   return (
     <>
-    <HeroContainer>
+    <HeroContainer id='home'>
       <HeroHeadlineContainer>
         <HeroHeadline>
           Jag är Kim Lind,

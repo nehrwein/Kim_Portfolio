@@ -4,7 +4,7 @@ export const AboutSection = styled.section`
 `
 
 export const AboutArticle = styled.article`
-  margin-top: 90px;
+  padding-top: 90px;
 `
 
 export const AboutHeadline = styled.h3`
