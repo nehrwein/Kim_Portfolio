@@ -47,6 +47,7 @@ export const SidebarMenu = styled.ul`
 `
 
 export const SidebarLink = styled(Link)`
+  font-family: 'Open Sans';
   display: flex;
   align-items: center;
   justify-content: center;

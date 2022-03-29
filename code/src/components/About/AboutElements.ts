@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
 export const AboutSection = styled.section`
+  @media (min-width: 668px) {
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 90px;
+  }
 `
 
 export const AboutArticle = styled.article`
@@ -13,7 +18,7 @@ export const AboutHeadline = styled.h3`
   font-weight: 400;
   font-size: 25px;
   line-height: 34px;
-  border-bottom: 1px solid;
+  border-bottom: 3px solid var(--secondary);
   padding-bottom: 10px;
 
   @media (min-width: 668px) {
@@ -32,10 +37,9 @@ interface AlivsProps {
 }
 
 export const AboutListItem = styled.li<AlivsProps>`
-  font-family: 'Domine';
   font-style: normal;
   font-weight: ${({ highlight }) => highlight > -1 ? 700 : 400};
-  color: ${({ highlight }) => highlight > -1 ? 'white' : 'whitesmoke'};
+  color: ${({ highlight }) => highlight > -1 ? 'var(--secondary)' : 'whitesmoke'};
   font-size: 18px;
   line-height: 21px;
 
@@ -46,12 +50,12 @@ export const AboutListItem = styled.li<AlivsProps>`
 `
 
 export const PdfDownload = styled.a`
+  font-family: 'Open Sans';
   display: block;
-  color: white;
+  color: whitesmoke;
   margin-top: 20px;
-  font-family: 'Domine';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 

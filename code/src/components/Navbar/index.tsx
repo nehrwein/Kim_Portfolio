@@ -21,7 +21,7 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                offset={0}
+                offset={-80}
               >
                 Home
             </NavLinks>
@@ -32,7 +32,7 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                offset={-40}
+                offset={0}
               >
                 About
             </NavLinks>

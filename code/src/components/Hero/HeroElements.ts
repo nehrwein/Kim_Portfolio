@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
+  margin: 0 auto;
   display: grid;
   max-width: 100vw;
   grid-template-columns: 1fr;

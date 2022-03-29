@@ -8,7 +8,7 @@ export const ContactContainer = styled.section`
   margin-top: 90px;
   margin-bottom: 250px;
   padding: 20px 0;
-  border-top: 1px solid;
+  border-top: 3px solid var(--secondary);
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -28,6 +28,9 @@ export const ContactContainer = styled.section`
   @media (min-width: 668px) {
     font-size: 21px;
     line-height: 29px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 250px;
   }
 `
 

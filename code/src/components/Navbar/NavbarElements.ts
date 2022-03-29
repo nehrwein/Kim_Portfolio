@@ -58,7 +58,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
-  height: 80px;
+  height: 40px;
 `
 
 export const NavLinks = styled(Link)`
@@ -76,6 +76,6 @@ export const NavLinks = styled(Link)`
   line-height: 29px;
 
   &.active {
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid var(--secondary);
   }
 `
