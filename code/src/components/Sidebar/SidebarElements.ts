@@ -21,7 +21,7 @@ export const SidebarContainer = styled.nav<SidebarProps>`
 `
 
 export const CloseIcon = styled(FaTimes)`
-  color: whitesmoke;
+  color: var(--white);
 `
 
 export const Icon = styled.div`

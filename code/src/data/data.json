@@ -2,7 +2,7 @@
   "About": [
     {
       "id": 1,
-      "headline": "Kompetens",
+      "subject": "Kompetens",
       "content": [
         "Reportage",
         "Nyheter", 
@@ -12,11 +12,13 @@
         "Pressmeddelanden", 
         "Översättning engelska/svenska (idiomatiskt korrekt)", 
         "Ordvitsar"
-      ]
+      ],
+      "download": "",
+      "href": ""
     },
     {
       "id": 2,
-      "headline": "Arbetslivserfarenhet",
+      "subject": "Arbetslivserfarenhet",
       "content": [ 
         "PR-konsult/kommunikatör/skribent",
         "Progress PR", 
@@ -31,11 +33,12 @@
         "Ystads Allehanda",
         "Barometern"
       ],
-      "CV": "DOWNLOAD CV"
+      "download": "DOWNLOAD CV",
+      "href": "/assets/CV_KL.pdf"
     },
     {
       "id": 3,
-      "headline": "Utbildning i urval",
+      "subject": "Utbildning i urval",
       "content": [
         "Digital Copywriting – Berghs School of Communication",
         "Magisterexamen",
@@ -43,7 +46,9 @@
         "Kandidatexamen",
         "Freds- och konfliktvetenskap",
         "Journalistutbildning"
-      ]
+      ],
+      "download": "",
+      "href": ""
     }
   ], 
   "A_Highlight": [

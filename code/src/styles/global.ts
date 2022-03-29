@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --gradientBlue: linear-gradient(180deg, #182A48 0%, rgba(24, 42, 72, 0.82) 100%);
     --blue: #182A48;
-    --secondary: cyan;
+    --secondary: #bea5a8;
   }
 
 

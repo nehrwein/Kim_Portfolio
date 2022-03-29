@@ -8,20 +8,22 @@ const About = () => {
       {data.About?.map((item) => (
         <AboutArticle key={item.id}>
           <AboutHeadline>
-            {item.headline}
+            {item.subject}
           </AboutHeadline>
           <AboutList>
             {item.content?.map((element) => (
               <AboutListItem
                 highlight={data.A_Highlight.indexOf(element)}
                 key={element}
-              >{element}
+              >
+                {element}
               </AboutListItem>
             ))}
           </AboutList>
           <PdfDownload 
-            href="/assets/CV_KL.pdf"
-            target="_blank">{item.CV}
+            href={item.href}
+            target="_blank">
+              {item.download}
           </PdfDownload>
         </AboutArticle>
       ))}
