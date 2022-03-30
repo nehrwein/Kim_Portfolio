@@ -11,13 +11,15 @@ export const AboutSection = styled.section`
 `
 
 interface AboutArticleProps {
-  show: number;
+  show: string;
   width: number;
 }
 
 export const AboutArticle = styled.article<AboutArticleProps>`
   padding-top: 90px;
-  display: ${({ show, width }) => width < 668 && show === 1 ? 'none' : 'block'};
+  display: ${({ show, width }) => width < 668 && show === 'bigScreen' ?
+   'none' : 
+   width > 668 && show === 'mobile' ? 'none' : 'block'};
 `
 
 export const AboutHeadline = styled.h3`
@@ -52,11 +54,11 @@ interface AlivsProps {
 
 export const AboutListItem = styled.li<AlivsProps>`
   font-style: normal;
-  list-style-type: ${({ highlight, list }) => !list || highlight > -1 ? 'none' : 'circle'};
+  list-style-type: ${({ highlight, list }) => !list || highlight > -1 ? 'none' : 'square'};
   color: whitesmoke;
   font-size: 18px;
   line-height: ${({ highlight }) => highlight > -1 ? '35px' : '21px'};
-  margin-left: ${({ highlight, list }) => !list || highlight > -1 ? '-20px' : 0};
+  margin-left: ${({ highlight, list }) => !list || highlight > -1 ? '-20px' : '10px'};
 
   @media (min-width: 668px) {
     font-size: 19px;

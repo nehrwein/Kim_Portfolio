@@ -9,7 +9,8 @@
       ],
       "download": "",
       "href": "",
-      "list": false
+      "list": false,
+      "show": "bigScreen"
     },
     {
       "id": 2,
@@ -26,7 +27,8 @@
       ],
       "download": "",
       "href": "",
-      "list": true
+      "list": true,
+      "show": "all"
     },
     {
       "id": 3,
@@ -47,7 +49,8 @@
       ],
       "download": "Download CV",
       "href": "/assets/CV_KL.pdf",
-      "list": true
+      "list": true,
+      "show": "all"
     },
     {
       "id": 4,
@@ -62,11 +65,32 @@
       ],
       "download": "",
       "href": "",
-      "list": true
+      "list": true,
+      "show": "mobile"
+    },
+    {
+      "id": 5,
+      "subject": "Utbildningar",
+      "content": [
+        "Senaste Utbildningar",
+        "Digital Copywriting – Berghs School of Communication",
+        "Längre Utbildningar",
+        "Magisterexamen",
+        "Internationella relationer",
+        "Kandidatexamen",
+        "Freds- och konfliktvetenskap",
+        "Journalistutbildning"
+      ],
+      "download": "",
+      "href": "",
+      "list": true,
+      "show": "bigScreen"
     }
   ], 
   "A_Highlight": [
     "PR-konsult/kommunikatör/skribent",
-    "Journalist"
+    "Journalist",
+    "Senaste Utbildningar",
+    "Längre Utbildningar"
   ]
 }

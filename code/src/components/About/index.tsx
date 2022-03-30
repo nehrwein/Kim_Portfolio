@@ -25,7 +25,7 @@ const About = () => {
       {data.About?.map((item) => (
         <AboutArticle 
           key={item.id}
-          show={item.id}
+          show={item.show}
           width={width}
         >
           <AboutHeadline>
