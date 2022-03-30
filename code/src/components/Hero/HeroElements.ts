@@ -30,7 +30,8 @@ export const HeroContainer = styled.div`
 
 export const HeroHeadlineContainer = styled.div`
   z-index: 10;
-  width: 100vw;
+  width: 90vw;
+  margin-left: 10px;
   grid-area: 4 / 1 / 5 / 2;
 
   @media (min-width: 668px) {
@@ -52,8 +53,9 @@ export const HeroHeadline = styled.h1`
 
 export const HeroTextContainer = styled.div`
   margin-top: 40px;
+  margin-left: 10px;
   display: flex;
-  width: 98%;
+  max-width: 90vw;
   flex-direction: column;
   justify-content: space-between;
   grid-area: 5 / 1 / 6 / 2;
@@ -81,7 +83,7 @@ export const HeroImage = styled.img.attrs({
   height: 100vh;
   max-height: 100vh;
   max-width: 100vw;
-  margin: 0 -10px;
+  margin: 0;
   object-fit: cover;
 
   @media (min-width: 668px) {

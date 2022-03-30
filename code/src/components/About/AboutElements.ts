@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const AboutSection = styled.section`
+  width: 90vw;
+  margin-left: 10px;
   @media (min-width: 668px) {
     margin: 0 auto;
-    width: 90%;
     padding-bottom: 90px;
   }
 `

@@ -4,9 +4,9 @@ export const ContactContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 90vw;
   height: 160px;
-  margin-top: 90px;
-  margin-bottom: 250px;
+  margin: 90px 0 250px 10px;
   padding: 20px 0;
   border-top: 3px solid var(--secondary);
   font-family: 'Open Sans';
@@ -28,7 +28,6 @@ export const ContactContainer = styled.section`
   @media (min-width: 668px) {
     font-size: 21px;
     line-height: 29px;
-    width: 90%;
     margin: 0 auto;
     padding-bottom: 250px;
   }
