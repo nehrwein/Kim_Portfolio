@@ -11,31 +11,19 @@ export const HeroContainer = styled.div`
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
     width: 90%;
-    margin-top: 80px;
+    margin-top: 100px;
   }
 `
-
-/* export const TextContainer = styled.div`
-  
-  display: none;
-  flex-direction: column;
-  justify-content: flex-end;
-  z-index: 10;
-
-  @media (min-width: 1024px) {
-    grid-area: 4 / 1 / 7 / 10;
-  }
-`
- */
 
 export const HeroHeadlineContainer = styled.div`
   z-index: 10;
-  width: 90vw;
-  margin-left: 10px;
+  width: 100%;
   grid-area: 4 / 1 / 5 / 2;
+  margin-left: 10px;
 
   @media (min-width: 668px) {
     grid-area: 6 / 1 / 9 / 10;
+    margin-left: 0;
   }
 `
 
@@ -46,6 +34,11 @@ export const HeroHeadline = styled.h1`
   line-height: 30px;
 
   @media (min-width: 668px) {
+    font-size: 33px;
+    line-height: 40px;
+  }
+
+  @media (min-width: 1024px) {
     font-size: 50px;
     line-height: 57px;
   }
@@ -57,11 +50,16 @@ export const HeroTextContainer = styled.div`
   display: flex;
   max-width: 90vw;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   grid-area: 5 / 1 / 6 / 2;
 
   @media (min-width: 668px) {
-    grid-area: 9 / 1 / 11 / 9;
+    grid-area: 8 / 1 / 11 / 10;
+    margin-left: 0;
+  }
+
+  @media (min-width: 1024px) {
+    grid-area: 8 / 1 / 11 / 9;
   }
 `
 
@@ -71,6 +69,11 @@ export const HeroText = styled.h2`
   line-height: 21px;
 
   @media (min-width: 668px) {
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  @media (min-width: 1024px) {
     font-size: 21px;
     line-height: 24px;
   }
@@ -87,9 +90,13 @@ export const HeroImage = styled.img.attrs({
   object-fit: cover;
 
   @media (min-width: 668px) {
-    grid-area: 1 / 8 / 11 / 13;
-    width: 547px;
-    height: 690px;
+    grid-area: 1 / 6 / 11 / 13;
+    max-width: 547px;
+    max-height: 690px;
+  }
+
+  @media (min-width: 1024px) {
+    grid-area: 1 / 9 / 11 / 13;
   }
 
 `

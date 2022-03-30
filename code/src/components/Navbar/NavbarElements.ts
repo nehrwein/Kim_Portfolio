@@ -11,10 +11,9 @@ export const Nav = styled.nav`
   font-size: 1rem;
   position: fixed;
   top: 0;
-
   z-index: 10;
 
-  @media (max-width: 668px) {
+  @media (max-width: 667px) {
     transition: 0.8s all ease;
   }
 `
@@ -32,7 +31,7 @@ export const NavbarContainer = styled.div`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 667px) {
     display: block;
     position: absolute;
     top: 0;
@@ -52,7 +51,7 @@ export const NavMenu = styled.ul`
   /* might not be needed in my design */
   margin-right: 50px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 667px) {
     display: none;
   }
 `

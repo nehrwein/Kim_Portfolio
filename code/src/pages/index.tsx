@@ -4,6 +4,7 @@ import Contact from '../components/Contact'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
+import { SiteContainer } from './HomeElements'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,9 +17,11 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
+      <SiteContainer>
       <Hero />
       <About />
       <Contact />
+    </SiteContainer>
     </>
   )
 }

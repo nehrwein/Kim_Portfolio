@@ -36,6 +36,7 @@ const About = () => {
               <AboutListItem
                 highlight={data.A_Highlight.indexOf(element)}
                 key={element}
+                list={item.list}
               >
                 {element}
               </AboutListItem>
@@ -44,7 +45,7 @@ const About = () => {
           <PdfDownload 
             href={item.href}
             target="_blank">
-              {item.download}
+             {item.download}
           </PdfDownload>
         </AboutArticle>
       ))}

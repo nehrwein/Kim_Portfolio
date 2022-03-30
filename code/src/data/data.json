@@ -4,10 +4,12 @@
       "id": 1,
       "subject": "Start spreading the news...",
       "content": [
-        "När man är gift med en FN-diplomat får man finna sig att flytta till New York. Därför lämnade jag i februari 2022 min tjänst som PR-konsult i Sverige och flyttade över Atlanten. Drömjobbet är såklart att rasta hundar åt rika Manhattan-bor, men det är nog bättre att jag ägnar mig åt det jag behärskar – att skriva. Så om ert företag är i behov av en erfaren skribent och är okej med distansarbete så hör av er."
+        "När man är gift med en FN-diplomat får man finna sig att flytta till New York. Därför lämnade jag i februari 2022 min tjänst som PR-konsult i Sverige och flyttade över Atlanten.",
+        "Drömjobbet är såklart att rasta hundar åt rika Manhattan-bor, men det är nog bättre att jag ägnar mig åt det jag behärskar – att skriva. Så om ert företag är i behov av en erfaren skribent och är okej med distansarbete så hör av er."
       ],
       "download": "",
-      "href": ""
+      "href": "",
+      "list": false
     },
     {
       "id": 2,
@@ -23,7 +25,8 @@
         "Ordvitsar"
       ],
       "download": "",
-      "href": ""
+      "href": "",
+      "list": true
     },
     {
       "id": 3,
@@ -43,7 +46,8 @@
         "Barometern"
       ],
       "download": "Download CV",
-      "href": "/assets/CV_KL.pdf"
+      "href": "/assets/CV_KL.pdf",
+      "list": true
     },
     {
       "id": 4,
@@ -57,7 +61,8 @@
         "Journalistutbildning"
       ],
       "download": "",
-      "href": ""
+      "href": "",
+      "list": true
     }
   ], 
   "A_Highlight": [

@@ -4,7 +4,7 @@ export const ContactContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 90vw;
+  width: 90%;
   height: 160px;
   margin: 90px 0 250px 10px;
   padding: 20px 0;
@@ -18,6 +18,7 @@ export const ContactContainer = styled.section`
 
   a {
     color: white;
+    display: block;
   }
 
   a:hover {
@@ -26,10 +27,15 @@ export const ContactContainer = styled.section`
   }
 
   @media (min-width: 668px) {
+    margin: 0 auto 250px auto;
+    font-size: 20px;
+    line-height: 28px;
+    height: 200px;
+  }
+
+  @media (min-width: 1024px) {
     font-size: 21px;
     line-height: 29px;
-    margin: 0 auto;
-    padding-bottom: 250px;
   }
 `
 
