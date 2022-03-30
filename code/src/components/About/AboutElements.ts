@@ -8,8 +8,14 @@ export const AboutSection = styled.section`
   }
 `
 
-export const AboutArticle = styled.article`
+interface AboutArticleProps {
+  show: number;
+  width: number;
+}
+
+export const AboutArticle = styled.article<AboutArticleProps>`
   padding-top: 90px;
+  display: ${({ show, width }) => width < 668 && show === 1 ? 'none' : 'block'};
 `
 
 export const AboutHeadline = styled.h3`
