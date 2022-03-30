@@ -16,7 +16,7 @@ export const HeroContainer = styled.div`
 `
 
 export const HeroHeadlineContainer = styled.div`
-  z-index: 10;
+  z-index: 5;
   width: 100%;
   grid-area: 4 / 1 / 5 / 2;
   margin-left: 10px;

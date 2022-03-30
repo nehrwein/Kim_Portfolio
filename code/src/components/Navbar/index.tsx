@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { Nav, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarElements'
 
@@ -7,9 +7,28 @@ interface Props {
 }
 
 const Navbar: React.FC<Props> = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false)
+
+  useEffect(() => {
+    const changeNav = () => {
+      if (window.scrollY >= 80) {
+        setScrollNav(true)
+      } else {
+        setScrollNav(false)
+      }
+    }
+
+    window.addEventListener('scroll', changeNav)
+  
+    return () => {
+      window.removeEventListener('scroll', changeNav)
+    }
+  }, [])
+  
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -32,7 +51,7 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                offset={0}
+                offset={-40}
               >
                 About
             </NavLinks>
@@ -43,7 +62,7 @@ const Navbar: React.FC<Props> = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                offset={80}
+                offset={-20}
               >
                 Contact
               </NavLinks>

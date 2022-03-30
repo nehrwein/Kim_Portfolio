@@ -1,9 +1,14 @@
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
 
-export const Nav = styled.nav`
+interface NavProps {
+  scrollNav: boolean;
+}
+
+export const Nav = styled.nav<NavProps>`
   height: 80px;
   width: 100vw;
+  background: ${({ scrollNav }) => scrollNav ? 'var(--blue)' : 'transparent'};
   /* margin-top: -80px; */
   display: flex;
   justify-content: flex-end;
@@ -47,9 +52,6 @@ export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
-  text-align: center;
-  /* might not be needed in my design */
-  margin-right: 50px;
 
   @media (max-width: 667px) {
     display: none;
@@ -65,7 +67,7 @@ export const NavLinks = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   height: 100%;
   cursor: pointer;
   font-family: 'Open Sans', sans-serif;
