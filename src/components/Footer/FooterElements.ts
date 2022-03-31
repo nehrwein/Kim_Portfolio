@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const StyledFooter = styled.small`
   text-align: center;
   display: block;
-  padding-bottom: 10px;
+  margin-top: -150px;
+  padding-bottom: 150px;
 
   a {
     color: inherit;
