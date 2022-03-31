@@ -3,8 +3,8 @@ import { ContactContainer, AddressContainer, TextContainer } from './ContactElem
 
 const Contact = () => {
   return (
-    <ContactContainer id='contact'>
-      <TextContainer>
+    <ContactContainer>
+      <TextContainer id='contact'>
         <AddressContainer>
           <p>Kim Lind</p>
           <p>550 West 45th Street</p>
