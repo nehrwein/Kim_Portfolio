@@ -20,8 +20,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     min-height: 100vh;
     max-width: 100vw;
-    background-repeat: no-repeat;
     color: whitesmoke;
+    background: var(--blue);
     background: var(--gradientBlue);
     font-family: 'Domine', serif;
     -webkit-font-smoothing: antialiased;
