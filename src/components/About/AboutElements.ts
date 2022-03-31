@@ -49,16 +49,16 @@ export const AboutList = styled.ul`
 
 interface AlivsProps {
   highlight: number;
-  list: boolean;
+  $list: boolean;
 }
 
 export const AboutListItem = styled.li<AlivsProps>`
   font-style: normal;
-  list-style-type: ${({ highlight, list }) => !list || highlight > -1 ? 'none' : 'square'};
+  list-style-type: ${({ highlight, $list }) => !$list || highlight > -1 ? 'none' : 'square'};
   color: whitesmoke;
   font-size: 18px;
   line-height: ${({ highlight }) => highlight > -1 ? '35px' : '21px'};
-  margin-left: ${({ highlight, list }) => !list || highlight > -1 ? '-20px' : '10px'};
+  margin-left: ${({ highlight, $list }) => !$list || highlight > -1 ? '-20px' : '10px'};
 
   @media (min-width: 668px) {
     font-size: 19px;

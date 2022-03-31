@@ -36,7 +36,7 @@ const About = () => {
               <AboutListItem
                 highlight={data.A_Highlight.indexOf(element)}
                 key={element}
-                list={item.list}
+                $list={item.list}
               >
                 {element}
               </AboutListItem>

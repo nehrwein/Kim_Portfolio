@@ -2,12 +2,11 @@ import styled from 'styled-components'
 
 export const ContactContainer = styled.section`
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   height: 100vh;
-  margin: 90px 0 250px 10px;
-  padding: 20px 0;
+  margin: 90px 0 0 10px;
   border-top: 3px solid var(--secondary);
   font-family: 'Open Sans';
   font-style: normal;
@@ -27,7 +26,7 @@ export const ContactContainer = styled.section`
   }
 
   @media (min-width: 668px) {
-    margin: 0 auto 250px auto;
+    margin: 90px auto 0 auto;
     font-size: 20px;
     line-height: 28px;
   }
@@ -36,6 +35,13 @@ export const ContactContainer = styled.section`
     font-size: 21px;
     line-height: 29px;
   }
+`
+
+export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px;
 `
 
 export const AddressContainer = styled.div`
