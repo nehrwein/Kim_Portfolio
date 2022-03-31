@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import About from '../components/About'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
@@ -21,6 +22,7 @@ const Home = () => {
       <Hero />
       <About />
       <Contact />
+      <Footer />
     </SiteContainer>
     </>
   )
