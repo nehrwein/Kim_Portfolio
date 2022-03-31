@@ -1,5 +1,16 @@
 import styled from 'styled-components'
 
+interface AboutArticleProps {
+  show: string;
+  width: number;
+}
+
+
+interface AlivsProps {
+  highlight: number;
+  $list: boolean;
+}
+
 export const AboutSection = styled.section`
   width: 90%;
   margin-left: 10px;
@@ -9,11 +20,6 @@ export const AboutSection = styled.section`
     padding-bottom: 90px;
   }
 `
-
-interface AboutArticleProps {
-  show: string;
-  width: number;
-}
 
 export const AboutArticle = styled.article<AboutArticleProps>`
   padding-top: 90px;
@@ -46,11 +52,6 @@ export const AboutList = styled.ul`
   margin-top: 20px;
   margin-left: 20px;
 `
-
-interface AlivsProps {
-  highlight: number;
-  $list: boolean;
-}
 
 export const AboutListItem = styled.li<AlivsProps>`
   font-style: normal;

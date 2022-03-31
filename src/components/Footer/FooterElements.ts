@@ -7,6 +7,5 @@ export const StyledFooter = styled.small`
 
   a {
     color: inherit;
-    /* text-decoration: none; */
   }
 `

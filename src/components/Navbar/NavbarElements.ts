@@ -9,7 +9,6 @@ export const Nav = styled.nav<NavProps>`
   height: 80px;
   width: 100vw;
   background: ${({ scrollNav }) => scrollNav ? 'var(--blue)' : 'transparent'};
-  /* margin-top: -80px; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
