@@ -82,9 +82,9 @@ export const DownloadLink = styled.a`
 
 export const DownloadBtn = styled.button<DownloadProps>`
   display: ${({ download }) => download ? 'flex' : 'none'};
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
-  width: 135px;
+  width: 140px;
   margin-top: 20px;
   background: #8a7c8c;
   border-radius: 5px;
@@ -106,11 +106,11 @@ export const DownloadBtn = styled.button<DownloadProps>`
 
   @media (min-width: 668px) {
     font-size: 19px;
-    width: 140px;
+    width: 150px;
   }
 
   @media (min-width: 1024px) {
     font-size: 21px;
-    width: 155px;
+    width: 160px;
   }
 `
