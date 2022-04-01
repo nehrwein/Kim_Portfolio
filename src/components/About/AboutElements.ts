@@ -2,13 +2,15 @@ import styled from 'styled-components'
 
 interface AboutArticleProps {
   show: string;
-  width: number;
 }
-
 
 interface AlivsProps {
   highlight: number;
   $list: boolean;
+}
+
+interface DownloadProps {
+  download: string;
 }
 
 export const AboutSection = styled.section`
@@ -23,9 +25,11 @@ export const AboutSection = styled.section`
 
 export const AboutArticle = styled.article<AboutArticleProps>`
   padding-top: 90px;
-  display: ${({ show, width }) => width < 668 && show === 'bigScreen' ?
-   'none' : 
-   width > 668 && show === 'mobile' ? 'none' : 'block'};
+  display: ${({ show }) =>  show === 'bigScreen' ? 'none' : 'block'};
+
+  @media (min-width: 668px) {
+    display: ${({ show }) =>  show === 'mobile' ? 'none' : 'block'};
+  }
 `
 
 export const AboutHeadline = styled.h3`
@@ -72,28 +76,41 @@ export const AboutListItem = styled.li<AlivsProps>`
   }
 `
 
-export const PdfDownload = styled.a`
-  font-family: 'Open Sans';
-  display: block;
-  color: whitesmoke;
+export const DownloadLink = styled.a`
+  text-decoration: none;
+`
+
+export const DownloadBtn = styled.button<DownloadProps>`
+  display: ${({ download }) => download ? 'flex' : 'none'};
+  align-items: center;
+  justify-content: space-between;
+  width: 135px;
   margin-top: 20px;
+  background: #8a7c8c;
+  border-radius: 5px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  outline: none;
+  border: none;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
+  color: whitesmoke;
+  padding: 5px 4px 3px 4px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 
   :hover {
-    color: var(--secondary);
-    transition: 0.2s ease-in-out;
+    transform: scale(1.04);
+    box-shadow: 14px 10px 34px 1px rgba(0, 0, 0, 0.24);
   }
 
   @media (min-width: 668px) {
     font-size: 19px;
-    line-height: 22px;
+    width: 140px;
   }
 
   @media (min-width: 1024px) {
     font-size: 21px;
-    line-height: 24px;
+    width: 155px;
   }
 `

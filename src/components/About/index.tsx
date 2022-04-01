@@ -1,32 +1,15 @@
-import { useState, useEffect } from 'react'
-import { AboutSection, AboutArticle, AboutHeadline, AboutList, AboutListItem, PdfDownload } from './AboutElements'
+import React from 'react'
+import { FaFileDownload } from 'react-icons/fa'
+import { AboutSection, AboutArticle, AboutHeadline, AboutList, AboutListItem, DownloadLink, DownloadBtn } from './AboutElements'
 import data from '../../data/data.json'
 
 const About = () => {
-  const [width, setWidth] = useState(0)
-
-  // useEffect is needed for updating window.innerWidth on resize
-  useEffect(() => {
-    const updateWindowDimensions = () => {
-      const newWidth = window.innerWidth
-      setWidth(newWidth)
-    }
-
-    window.addEventListener("resize", updateWindowDimensions)
-  
-    return () => {
-      window.removeEventListener("resize", updateWindowDimensions)
-    }
-  }, [])
-  
-
   return (
     <AboutSection id='about'>
       {data.About?.map((item) => (
         <AboutArticle 
           key={item.id}
           show={item.show}
-          width={width}
         >
           <AboutHeadline>
             {item.subject}
@@ -42,11 +25,19 @@ const About = () => {
               </AboutListItem>
             ))}
           </AboutList>
-          <PdfDownload 
+          <DownloadLink
             href={item.href}
-            target="_blank">
-             {item.download}
-          </PdfDownload>
+            target='_blank'
+            rel='noreferrer'
+          >
+            <DownloadBtn 
+              type='button'
+              download={item.download}
+            >
+              <FaFileDownload />
+              {item.download}
+            </DownloadBtn>
+          </DownloadLink>
         </AboutArticle>
       ))}
     </AboutSection>
