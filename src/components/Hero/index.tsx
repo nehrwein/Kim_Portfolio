@@ -7,13 +7,13 @@ const Hero = () => {
     <HeroContainer id='home'>
       <HeroHeadlineContainer>
         <HeroHeadline>
-          Jag är Kim Lind,
+          Kim Lind.
         </HeroHeadline>
         <HeroHeadline>
-          skribent, kommunikatör & PR-konsult
+          Skribent, kommunikatör & PR-konsult.
         </HeroHeadline>
         <HeroHeadline>
-          New York-bo
+          New York-bo.
         </HeroHeadline>
       </HeroHeadlineContainer> 
       <HeroImage />
@@ -22,7 +22,7 @@ const Hero = () => {
           Finnes: Frilansskribent med bred erfarenhet av olika ämnesområden, bland annat byggindustri, life science, privatekonomi och sport.
         </HeroText>
         <HeroText>
-          Sökes: Uppdragsgivare på distans. 
+          Sökes: Uppdrag på distans. 
         </HeroText>
       </HeroTextContainer>
     </HeroContainer>

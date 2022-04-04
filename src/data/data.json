@@ -57,9 +57,9 @@
       "subject": "Utbildning i urval",
       "content": [
         "Digital Copywriting – Berghs School of Communication",
-        "Magisterexamen",
+        "Magisterexamen:",
         "Internationella relationer",
-        "Kandidatexamen",
+        "Kandidatexamen:",
         "Freds- och konfliktvetenskap",
         "Journalistutbildning"
       ],
@@ -75,9 +75,9 @@
         "Senaste Utbildningar",
         "Digital Copywriting – Berghs School of Communication",
         "Längre Utbildningar",
-        "Magisterexamen",
+        "Magisterexamen:",
         "Internationella relationer",
-        "Kandidatexamen",
+        "Kandidatexamen:",
         "Freds- och konfliktvetenskap",
         "Journalistutbildning"
       ],
@@ -92,5 +92,9 @@
     "Journalist",
     "Senaste Utbildningar",
     "Längre Utbildningar"
+  ],
+  "e_subjects": [
+    "Internationella relationer",
+    "Freds- och konfliktvetenskap"
   ]
 }

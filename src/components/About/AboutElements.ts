@@ -5,6 +5,7 @@ interface AboutArticleProps {
 }
 
 interface AlivsProps {
+  subject: number;
   highlight: number;
   $list: boolean;
 }
@@ -59,7 +60,7 @@ export const AboutList = styled.ul`
 
 export const AboutListItem = styled.li<AlivsProps>`
   font-style: normal;
-  list-style-type: ${({ highlight, $list }) => !$list || highlight > -1 ? 'none' : 'square'};
+  list-style-type: ${({ subject, highlight, $list }) => !$list || highlight > -1 || subject > -1 ? 'none' : 'square'};
   color: whitesmoke;
   font-size: 18px;
   line-height: ${({ highlight }) => highlight > -1 ? '35px' : '21px'};

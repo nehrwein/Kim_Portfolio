@@ -17,6 +17,7 @@ const About = () => {
           <AboutList>
             {item.content?.map((element) => (
               <AboutListItem
+                subject={data.e_subjects.indexOf(element)}
                 highlight={data.A_Highlight.indexOf(element)}
                 key={element}
                 $list={item.list}
