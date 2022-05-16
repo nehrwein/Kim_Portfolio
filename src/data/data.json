@@ -66,32 +66,12 @@
       "download": "",
       "href": "",
       "list": true,
-      "show": "mobile"
-    },
-    {
-      "id": 5,
-      "subject": "Utbildningar",
-      "content": [
-        "Senaste Utbildningar",
-        "Digital Copywriting – Berghs School of Communication",
-        "Längre Utbildningar",
-        "Magisterexamen:",
-        "Internationella relationer",
-        "Kandidatexamen:",
-        "Freds- och konfliktvetenskap",
-        "Journalistutbildning"
-      ],
-      "download": "",
-      "href": "",
-      "list": true,
-      "show": "bigScreen"
+      "show": "all"
     }
   ], 
   "A_Highlight": [
     "PR-konsult/kommunikatör/skribent",
-    "Journalist",
-    "Senaste Utbildningar",
-    "Längre Utbildningar"
+    "Journalist"
   ],
   "e_subjects": [
     "Internationella relationer",

@@ -19,11 +19,11 @@ export const HeroHeadlineContainer = styled.div`
   z-index: 5;
   width: 100%;
   grid-area: 4 / 1 / 5 / 2;
-  margin-left: 10px;
+  padding-left: 10px;
 
   @media (min-width: 668px) {
     grid-area: 6 / 1 / 9 / 10;
-    margin-left: 0;
+    padding-left: 0;
   }
 `
 
